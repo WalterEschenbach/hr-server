@@ -1,6 +1,6 @@
 flowchart LR;
     id1([client])-->id8{api gateway};
-    id8-->id2(load balancer);
+    id8--/message-->id2(load balancer);
     id8--/enroll-->id9[enrollment];
     subgraph Message Service
     id2-->id4[app instance #1];
