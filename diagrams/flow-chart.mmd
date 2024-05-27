@@ -1,0 +1,11 @@
+flowchart LR;
+    id1([client])-->id8{api gateway};
+    id8-->id2(load balancer);
+    id8--/enroll-->id9[enrollment];
+    id2-->id4[app instance #1];
+    id2-->id5[app instance #2];
+    id2-->id6[app instance #3];
+    id4-->id7[(postgresDB)];
+    id5-->id7;
+    id6-->id7;
+    
